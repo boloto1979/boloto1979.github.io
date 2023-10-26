@@ -1,0 +1,34 @@
+title: The Church of Bits
+description: The sacred place where we pray for the sanctity of computing bits
+author:
+  name: Ricardo Costa
+  email: thedeadbyte at protonmail dot com
+  nickname: "@astreuzz"
+  twitter: https://twitter.com/astreuzz
+  github: https://github.com/astreuzz
+  youtube: https://youtube.com/@empoucosbits
+  linkedin: https://linkedin.com/in/thedeadbyte
+
+baseurl: ""
+url: https://astreuzz.github.io
+
+nav:
+  - title: Home
+    path: /
+  - title: About
+    path: /about
+  - title: Search
+    path: /search
+
+paginate: 3
+paginate_path: "/:num"
+
+collections:
+  posts:
+    output: true
+    permalink: "/post/:title"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag

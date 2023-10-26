@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="post">
+<div class="header">
+  <h1>{{ page.title }}</h1>
+<p>{{ page.date | date_to_long_string }} / Written by {{ site.author.name }} (<a href="{{ site.author.twitter }}">@astreuzz</a>)</p>
+</div>
+
+{{ content }}
+</div>

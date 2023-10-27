@@ -1,6 +1,6 @@
 $font-family: "Lucida Consola", monospace;
-$color:var(--color-white);
 $font-size: 15px;
+$font-color: white;
 $alt-font-size: 19px;
 $mobile-font-size: 13px;
 $max-width: 720px;
@@ -89,6 +89,7 @@ body {
   max-width: $max-width;
   padding: 0px;
   width: $width;
+  color: var(--font-color);
 }
 
 header {

@@ -12,11 +12,7 @@ A Reverse Shell is a technique used in information security to gain remote acces
 
 It is important to note that the use of Reverse Shell may be considered illegal and unethical if performed without proper consent from the owner of the target system. This technique is often employed by information security professionals and pentesters as part of security testing and auditing on systems to identify vulnerabilities and enhance the security of the environment.
 
-<div>
-<img src="https://raw.githubusercontent.com/boloto1979/Basic-Types-of-Malware/main/Reverse%20Shell/images/connection.png"/>
-</div>
-
-## Program: rev-shell.cpp
+## Program: [rev-shell.cpp](https://github.com/boloto1979/Basic-Types-of-Malware/blob/main/Reverse%20Shell/rev-shell.cpp)
 
 The "rev-shell.cpp" program is a C++ code that implements a Reverse Shell for Windows operating systems. The code uses the ´winsock2.h´ socket library for network communication and the Windows API for process manipulation.
 

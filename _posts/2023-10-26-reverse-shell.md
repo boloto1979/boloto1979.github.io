@@ -4,8 +4,6 @@ title: Reverse Shell
 description: "A Reverse Shell is a technique used in information security to gain remote access to a target computer, allowing an attacker to execute commands on that system and receive the output of those commands back."
 ---
 
-# Reverse Shell
-
 ## What is a Reverse Shell?
 
 A Reverse Shell is a technique used in information security to gain remote access to a target computer, allowing an attacker to execute commands on that system and receive the output of those commands back. This technique is called "reverse" because, unlike the traditional shell where the client (user's terminal) connects to the server (target computer) to execute commands, in the Reverse Shell, the server (target computer) connects to the client (attacker's computer) to receive commands.

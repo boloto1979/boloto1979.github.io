@@ -1,16 +1,15 @@
-title: The Church of Bits
-description: The sacred place where we pray for the sanctity of computing bits
+title: Binary Temple
+description: Welcome to the temple, my lord! Contemplate the grandeur of the bits.
 author:
-  name: Ricardo Costa
-  email: thedeadbyte at protonmail dot com
-  nickname: "@astreuzz"
-  twitter: https://twitter.com/astreuzz
-  github: https://github.com/astreuzz
-  youtube: https://youtube.com/@empoucosbits
-  linkedin: https://linkedin.com/in/thedeadbyte
+  name: Pedro Lima
+  email: pedro.lima1979@hotmail.com
+  nickname: "@_ordepp"
+  twitter: https://twitter.com/_ordepp
+  github: https://github.com/boloto1979
+  linkedin: https://www.linkedin.com/in/pedro-lima3233/
 
 baseurl: ""
-url: https://astreuzz.github.io
+url: https://boloto1979.github.io
 
 nav:
   - title: Home

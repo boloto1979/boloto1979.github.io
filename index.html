@@ -23,12 +23,12 @@ image: /assets/img/church-of-bits.png
   }
 </style>
 
-{% for post in paginator.posts %}
-
 <div id="search-container">
   <input class="box" type="text" id="search-input" placeholder="Search...">
   <ol id="results-container"></ol>
-  </div>
+</div>
+
+{% for post in paginator.posts %}
 
 <div class="post-overview box">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>

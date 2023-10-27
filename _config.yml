@@ -16,8 +16,6 @@ nav:
     path: /
   - title: About
     path: /about
-  - title: Search
-    path: /search
 
 paginate: 3
 paginate_path: "/:num"

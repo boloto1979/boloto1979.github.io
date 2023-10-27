@@ -5,6 +5,29 @@ description: Welcome to the temple, my lord! Contemplate the grandeur of the bit
 image: /assets/img/church-of-bits.png
 ---
 
+<style>
+  input {
+    background-color: #e2e2e200;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    color: #e42911;
+  }
+
+  #search-container {
+      max-width: 100%;
+  }
+
+  #results-container {
+    margin: .5rem 0;
+  }
+</style>
+
+<div id="search-container">
+  <input class="box" type="text" id="search-input" placeholder="Search...">
+  <ol id="results-container"></ol>
+  </div>
+
 {% for post in paginator.posts %}
 <div class="post-overview box">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -29,3 +52,18 @@ image: /assets/img/church-of-bits.png
     <span class="next">Next</span>
   {% endif %}
 </div>
+
+<script src="/search.js" type="text/javascript"></script>
+<!-- Configuration -->
+<script type="text/javascript">
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<li><a href="{url}" title="{description}">{title}</a></li>',
+  noResultsText: 'No results found',
+  limit: 10,
+  fuzzy: false,
+  exclude: ['Welcome']
+})
+</script>

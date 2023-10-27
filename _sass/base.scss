@@ -1,4 +1,5 @@
 $font-family: "Lucida Consola", monospace;
+$color:var(--color-white);
 $font-size: 15px;
 $alt-font-size: 19px;
 $mobile-font-size: 13px;
@@ -6,10 +7,10 @@ $max-width: 720px;
 $width: 90%;
 
 :root {
-  --base-color: #0c0c0f;
+  --base-color: #e42911;
   --bg-color: #e2e2e2a9;
-  --link-color: #3e6ff7;
-  --color-blue: #3e6ff7;
+  --link-color: #e42911;
+  --color-blue: #e42911;
   --color-green: #2ded4d;
   --color-orange: #ed7f25;
   --color-purple: #9125ed;

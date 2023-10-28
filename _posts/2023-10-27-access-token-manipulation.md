@@ -45,3 +45,50 @@ Access token manipulation can have serious data security implications. If an acc
 Access token manipulation can also be used for privilege escalation, allowing an attacker to access resources or perform actions that would normally be prohibited. To mitigate this risk, systems should implement strict authorization policies that check whether a user has the appropriate permissions before granting access to resources.
 
 In conclusion, Access Token Manipulation is a technique that can be used both legitimately and maliciously in authentication and authorization systems. Security is paramount to protect access tokens and ensure that only authorized users have access to sensitive resources and data. Implementing best security practices is essential to prevent and detect malicious activities related to token manipulation.
+
+<div style="text-align: center;">
+<img src="https://raw.githubusercontent.com/boloto1979/Basic-Types-of-Malware/main/Access%20Token%20Manipulation/images/accesstoken.png"/>
+</div>
+
+This [repository](https://github.com/boloto1979/Basic-Types-of-Malware/tree/main/Access%20Token%20Manipulation) contains two versions of the ATM (Assume The Identity of Another User) tool:
+
+1. **ATM.cpp** - Windows version
+2. **unix_ATM.cpp** - Linux version
+
+Both versions aim to assume the identity of another user on the operating system where they are being executed, allowing a process to run with the privileges of that specific user.
+
+## ATM.cpp - Windows Version
+
+### Features:
+- Assumes the identity of another user on the Windows system to execute a process with that user's privileges.
+- Uses Windows API functions related to security and token management to gain access to a specific process and create a new process on behalf of the desired user.
+- Allows specifying the PID (Process ID) of the process from which you want to assume the identity.
+
+### Usage:
+1. Compile the program using a C++ compiler that supports Windows libraries.
+2. Run the program as an administrator or with elevated privileges to allow access to the required tokens and privileges.
+3. Fill in the value of the `pid_to_impersonate` variable with the PID of the process you want to assume the identity of.
+4. The program will request access to the token of the specified process, enable the SE_DEBUG_NAME privilege for debugging purposes, and then create a new process with the duplicated token on behalf of the desired user.
+
+**Note:** Be cautious when using this program, as assuming the identity of other users without proper authorization may be a security violation.
+
+## unix_ATM.cpp - Linux Version
+
+### Features:
+- Executes a process on the Linux system with superuser privileges (root) from the beginning.
+- Allows specifying the PID of the process you want to assume the identity of.
+- Creates a new process on behalf of the desired user.
+
+### Usage:
+1. Compile the program using a C++ compiler compatible with the Linux system.
+2. Run the program with superuser privileges (root) to enable it to create processes with the necessary privileges.
+3. Fill in the value of the `pid_to_impersonate` variable with the PID of the process whose identity you want to assume.
+4. The program will create a new process with superuser privileges and the identity of the user associated with the specified PID.
+
+**Note:** Running programs with superuser privileges can be dangerous and should be done with extreme caution, only for legitimate and authorized purposes.
+
+## Security Warning:
+
+Both versions of the tool are intended for educational purposes and should not be used for malicious purposes or without proper authorization. Manipulating user identities and privileges is a critical security issue and should be done responsibly and only on systems where you have permission to perform such actions. Misusing these tools may lead to legal consequences and significant harm.
+
+**Use these tools with care and responsibility.**

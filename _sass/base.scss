@@ -108,6 +108,11 @@ header h1 {
   text-align: center;
 }
 
+.post .header .tldr {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 nav {
   font-size: $alt-font-size;
 }

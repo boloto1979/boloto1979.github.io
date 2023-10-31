@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Remote Process Injection
-description: "emote process injection is a technique used by attackers to execute malicious code in remote processes with the goal of gaining control or unauthorized access to target systems or servers. This technique poses a significant threat to information security."
+description: "remote process injection is a technique used by attackers to execute malicious code in remote processes with the goal of gaining control or unauthorized access to target systems or servers. This technique poses a significant threat to information security."
 ---
 
 ## Objectives of Remote Process Injection

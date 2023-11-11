@@ -38,22 +38,6 @@ image: /assets/img/church-of-bits.png
 </div>
 {% endfor %}
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">&lt;&lt; Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next &gt;&gt;</a>
-  {% else %}
-    <span class="next">Next</span>
-  {% endif %}
-</div>
-
 <script src="/search.js" type="text/javascript"></script>
 <!-- Configuration -->
 <script type="text/javascript">

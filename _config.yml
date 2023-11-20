@@ -16,7 +16,7 @@ nav:
   - title: About
     path: /about
 
-paginate: 3
+paginate: 10
 paginate_path: "/:num"
 
 collections:

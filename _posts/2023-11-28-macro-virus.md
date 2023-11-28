@@ -18,7 +18,7 @@ These viruses can compromise not only data integrity but also exploit system vul
 
 ## Code sample
 
-c
+```c
 Set UngaDasOutlook = CreateObject("Outlook.Application")
 ;creating an instance of Outlook
 If System.PrivateProfileString "", ["HKEY_CURRENT_USER\Software\Microsoft\Office\", "Melissa?"] <> "... by Kwyjibo" Then
@@ -37,28 +37,18 @@ If System.PrivateProfileString "", ["HKEY_CURRENT_USER\Software\Microsoft\Office
             x = x + 1
             If x > 50 Then oo = AddyBook.AddressEntries.Count
          Next oo
-
+```
 This VBA code attempts to interact with Microsoft Outlook by manipulating email address information. Let's review the key points:
 
-1. *Outlook Instance*
+1. *Outlook Instance:* I create an instance of the Outlook application using `CreateObject`.
 
-I create an instance of the Outlook application using `CreateObject`.
+2. *Execution Conditions:* I check if a specific registry key (`HKEY_CURRENT_USER\Software\Microsoft\Office\`) has the value "Melissa?" different from "... by Kwyjibo" before proceeding with execution.
 
-2. *Execution Conditions*
+3. *Outlook Verification:* I verify if the variable `UngaDasOutlook` is equal to "Outlook." If true, the code continues.
 
-I check if a specific registry key (`HKEY_CURRENT_USER\Software\Microsoft\Office\`) has the value "Melissa?" different from "... by Kwyjibo" before proceeding with execution.
+4. *MAPI (Messaging Application Programming Interface) Logon:* I attempt to log on to MAPI using a profile and password. However, the variable `DasMapiName` has not been declared or defined earlier in the provided code, so there might be an error in this part of the code.
 
-3. *Outlook Verification*
-
-I verify if the variable `UngaDasOutlook` is equal to "Outlook." If true, the code continues.
-
-4. *MAPI (Messaging Application Programming Interface) Logon*
-
-I attempt to log on to MAPI using a profile and password. However, the variable `DasMapiName` has not been declared or defined earlier in the provided code, so there might be an error in this part of the code.
-
-5. *Loop Through Email Addresses*
-
-I iterate through the address lists in MAPI, and within this loop, I traverse the address entries in a specific list, adding up to 50 email addresses to a `Recipients` object named `BreakUmOffASlice`.
+5. *Loop Through Email Addresses:* I iterate through the address lists in MAPI, and within this loop, I traverse the address entries in a specific list, adding up to 50 email addresses to a `Recipients` object named `BreakUmOffASlice`.
 
 ## Forms of Protection: Digital Shields Against Macro Viruses
 

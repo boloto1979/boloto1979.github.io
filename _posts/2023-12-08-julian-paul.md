@@ -3,10 +3,10 @@ layout: post
 title: Julian Paul Assange
 description: "An Australian activist, computer programmer, journalist and founder of the website WikiLeaks."
 ---
-<div style="display: flex; align-items: center; justify-content: center; height: 100vh; margin-bottom: 20px;">
+<div style="text-align: center;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Julian_Assange_August_2014.jpg" alt="Julian" style="max-width: 100%; max-height: 100%; width: 20vw;">
 </div>
-<div style="text-align: justify; margin: 20px;">
+<div style="text-align: justify; margin: 10px;">
 Julian Paul Assange, born Hawkins on July 3, 1971, is a prominent and controversial figure in the realms of technology, journalism, and activism. His journey is marked by achievements, controversies, and legal challenges that have thrust him into the global spotlight.<br>
 <br>
 Assange, originally from Australia, gained recognition as a computer programmer, showcasing exceptional skills from an early age. However, it was as an activist and founder of the WikiLeaks website that he became internationally known. WikiLeaks, created by Assange in 2006, gained notoriety for publishing confidential documents, leaks of sensitive information, and impactful revelations about governments and corporations worldwide.<br>
